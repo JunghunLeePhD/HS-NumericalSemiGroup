@@ -1,0 +1,6 @@
+.DS_Store
+/dist-newstyle
+*.db*
+/.vscode
+/nsg-data
+*.pdf

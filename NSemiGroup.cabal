@@ -1,0 +1,40 @@
+cabal-version:      2.4
+name:               NSemiGroup
+version:            1.0.0.0
+tested-with:        GHC ==9.4.8
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+license:            NONE
+author:             junghun
+maintainer:         yijeonghunxd@gmail.com
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files: CHANGELOG.md
+
+executable NSemiGroup
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules:    NSGroup,
+                      PSieve
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    base >= 4.17 && < 4.18,
+                      array,
+                      monad-logger,
+                      mtl,
+                      text,
+                      resourcet,
+                      time,
+    ghc-options:      -O2
+    hs-source-dirs:   src
+    default-language: Haskell2010
